@@ -26,7 +26,7 @@ const User = mongoose.models.User || mongoose.model("User", UserSchema);
       process.exit(0);
     }
 
-    const hashed = await bcrypt.hash("Admin@1234", 10);
+    const hashed = await bcrypt.hash("Admin@123", 10);
     const admin  = await User.create({
       name:     "Platform Admin",
       email:    "admin@gmail.com",
@@ -37,8 +37,6 @@ const User = mongoose.models.User || mongoose.model("User", UserSchema);
 
     console.log("✅ Admin created!");
     console.log(`   Email:    ${admin.email}`);
-    console.log(`   Password: Admin@1234`);
-    console.log("   ⚠️  Change the password after first login.");
     process.exit(0);
   } catch (err) {
     console.error("❌ Seed failed:", err.message);

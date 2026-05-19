@@ -105,7 +105,7 @@ Edit `server/.env`:
 MONGO_URI=mongodb+srv://USER:PASS@cluster.mongodb.net/exam_platform
 JWT_SECRET=any_long_random_string
 PORT=5000
-ANTHROPIC_API_KEY=sk-ant-...   # Get from https://console.anthropic.com
+GROQ_API_KEY=gsk_Of...   # Get from https://console.groq.com
 ```
 
 ### 3. Run development servers
